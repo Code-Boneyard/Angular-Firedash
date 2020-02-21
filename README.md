@@ -5,6 +5,11 @@ Live Demo: https://www.angular-firedash.netlify.com
 
 ![](https://firebasestorage.googleapis.com/v0/b/angular-material-firestarter.appspot.com/o/demo.PNG?alt=media&token=2a379f4d-e73d-40dc-ac39-00d8792a49af)
 
+## Goals
+* Full Authentication Workflow
+* Typescript
+* Feather-weight
+
 ## Getting started
 
 * Check out the [live demo][demo].
@@ -26,7 +31,7 @@ Please search previous issues (and Google and StackOverflow) before creating a n
 
 ## Want to contribute?
 
-If you want to contribute through code or documentation, the [Contributing
+If you want to contribute :pray: through code or documentation, the [Contributing
 guide is the best place to start][contributing]. If you have questions, feel free
 to ask.
 
@@ -35,7 +40,7 @@ to ask.
 
 We try not to reinvent the wheel, so Active Admin is built with other open source projects:
 
-Tool / Version        | Description
+Tool / Version :floppy_disk:      | Description
 --------------------- | -----------
 NodeJS                | Ruby -> HTML, just like that.
 NPM                   | Powerful, extensible user authentication
