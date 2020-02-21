@@ -1,18 +1,19 @@
-# Angular FireDash
+# :fire: Angular FireDash
 Featherweight administrative dashboard starter project using **Angular 9**, **Firestore** and **Material Design**.  
 
-Live Demo: https://www.angular-firedash.netlify.com
+Live Demo: :computer:  https://www.angular-firedash.netlify.com
 
 ![](https://firebasestorage.googleapis.com/v0/b/angular-material-firestarter.appspot.com/o/demo.PNG?alt=media&token=2a379f4d-e73d-40dc-ac39-00d8792a49af)
 
 ## Goals
-* Full Authentication Workflow
-* Typescript
+* Provide Modern Full Authentication Workflow
+* Maximize the use of Typescript
+* Modern User Experience
 * Feather-weight :zap:
 
 ## Getting started
 
-* Check out the :fire:[live demo][demo].
+* Check out the [live demo][demo].
 * Read through [the documentation][docs].
 * Review the [wiki] for links to tutorials, articles and sample projects.
 * Become a [Contributor][contributing]!
@@ -47,6 +48,8 @@ NPM                   | Powerful, extensible user authentication
 Angular CLI           | A Rails form builder plugin with semantically rich and accessible markup
 AngularFire v5.5      | Simplifies controllers with pre-built RESTful controller actions
 Material Design       | Elegant pagination for any sort of collection
+
+Fork, Clone to Local Machine, 
 
 ## Features
 - [x] Angular 9
