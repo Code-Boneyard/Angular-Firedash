@@ -85,7 +85,7 @@ Tool                  | Description
 
 ## Usage
 1. Clone from Git and install dependencies
-        git clone https://github.com/max-geller/angular-9-material-firestarter-client-dashboard.git firestarter
+        git clone https://github.com/max-geller/angular-9-material-firestarter-firedash.git firestarter
         cd firestarter
         npm install
 
