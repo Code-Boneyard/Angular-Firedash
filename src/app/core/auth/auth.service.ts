@@ -11,12 +11,12 @@ import { DOCUMENT } from '@angular/common';
 
 @Injectable()
 
-export class AuthService  { 
+export class AuthService  {
 
   user$: Observable<User>;
 
   constructor(@Inject(DOCUMENT) private document: Document,
-    private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) { 
+    private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
         this.user$ = afAuth.authState.pipe(
           switchMap(user => {
               // Logged in
@@ -34,14 +34,14 @@ export class AuthService  {
     // Sets user data to firestore on login
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
 
-    const data = { 
-      uid: user.uid, 
-      email: user.email, 
+    const data = {
+      uid: user.uid,
+      email: user.email,
       displayName: user.displayName
-    } 
+    }
 
     return userRef.set(data, { merge: true })
-  
+
     }
 
   /* Sign in */
@@ -62,7 +62,7 @@ export class AuthService  {
   /* Sign out */
   SignOut() {
     this.afAuth.auth.signOut().then(() => {
-      this.document.location.href = 'https://www.sutroanalytics.com';
+      this.document.location.href = 'https://www.angular-firedash.netlify.com/sessions/login';
     });
   }
 

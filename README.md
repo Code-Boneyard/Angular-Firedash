@@ -1,7 +1,8 @@
-# Angular 9 Material Firestarter 
-Client dashboard starter project using **Angular 9, Firestore** and **Material**.
+# Angular FireDash
+Featherweight administrative dashboard starter project using **Angular 9**, **Firestore** and **Material Design**.
 
-Live Demo: https://www.angular-firestarter.netlify.com
+Live Demo: https://www.angular-firedash.netlify.com
+
 ## Goals
 
 * Enable developers to quickly create good-looking administration interfaces.
@@ -9,9 +10,12 @@ Live Demo: https://www.angular-firestarter.netlify.com
 * Ensure that developers can easily customize every nook and cranny.
 
 ## To DO
-- [ ] Angular 9.x + Firebase
-- [ ] OAuth and Email/Password Signup with Firebase
-- [ ] D
+- [ ] 'Reset Password' Workflow
+- [ ] 'Email Verification' Workflow
+- [ ] Implement AuthGuard
+- [ ] Dynamic Notification Service
+- [ ] Messaging Service
+
 
 ## Getting started
 
@@ -25,6 +29,9 @@ Active Admin for enterprise is available via the Tidelift subscription. [Learn
 More][tidelift_enterprise].
 
 ## Need help?
+
+## Slack Channel
+
 
 Please use [StackOverflow][stackoverflow] for help requests and how-to questions.
 
