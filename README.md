@@ -3,6 +3,7 @@ Featherweight administrative dashboard starter project using **Angular 9**, **Fi
 
 Live Demo: https://www.angular-firedash.netlify.com
 
+![](src/assets/images/demo.png)
 
 ## Getting started
 
