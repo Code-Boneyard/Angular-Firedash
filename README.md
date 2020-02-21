@@ -8,11 +8,11 @@ Live Demo: https://www.angular-firedash.netlify.com
 ## Goals
 * Full Authentication Workflow
 * Typescript
-* Feather-weight
+* Feather-weight :zap:
 
 ## Getting started
 
-* Check out the [live demo][demo].
+* Check out the :fire:[live demo][demo].
 * Read through [the documentation][docs].
 * Review the [wiki] for links to tutorials, articles and sample projects.
 * Become a [Contributor][contributing]!
@@ -31,8 +31,8 @@ Please search previous issues (and Google and StackOverflow) before creating a n
 
 ## Want to contribute?
 
-If you want to contribute :pray: through code or documentation, the [Contributing
-guide is the best place to start][contributing]. If you have questions, feel free
+If you want to contribute through code or documentation, the [Contributing
+guide is the best place to start][contributing] :pray:. If you have questions, feel free
 to ask.
 
 
@@ -67,7 +67,7 @@ Material Design       | Elegant pagination for any sort of collection
 
 2. Create a project at https://firebase.google.com/ and grab your web config.  
 
-3. Add the config to your Angular environment in 'src/environments/' and update the environment.prod.ts and environment.ts files.
+3. Add the config :key: to your Angular environment in 'src/environments/' and update the environment.prod.ts and environment.ts files.
 
         export const environment = {
           production: false,
@@ -103,4 +103,3 @@ Material Design       | Elegant pagination for any sort of collection
 [slack]: https://angularfiredash.slack.com
 [contributing]: CONTRIBUTING.md
 
-Made with :heart: in San Francisco
