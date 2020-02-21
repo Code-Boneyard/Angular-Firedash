@@ -33,5 +33,5 @@ Live Demo: https://www.angular-firestarter.netlify.com
             appId: '...',
           }
         };
-4. Serve project 
-        ng serve
+4. Serve project and navigate to localhost:4200
+        ng serve -o
