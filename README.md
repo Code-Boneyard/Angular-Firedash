@@ -6,13 +6,13 @@ Client dashboard starter project using Angular 9, Firestore and Material
 Live Demo: https://www.angular-firestarter.netlify.com
 
 ## Features
-[x] Angular 9.x + Firebase
-[x] OAuth and Email/Password Signup with Firebase
-[x] Drag & drop Kanban demo with Firestore
+- [x] Angular 9.x + Firebase
+- [x] OAuth and Email/Password Signup with Firebase
+- [x] Drag & drop Kanban demo with Firestore
 
 
 ## Usage
-1. Run
+1. Cline from Git and install dependencies
         git clone https://github.com/max-geller/angular-9-material-firestarter-client-dashboard.git firestarter
         cd firestarter
         npm install
@@ -33,5 +33,5 @@ Live Demo: https://www.angular-firestarter.netlify.com
             appId: '...',
           }
         };
-4. Run 
+4. Serve project 
         ng serve
