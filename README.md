@@ -23,8 +23,6 @@ Please use [StackOverflow][stackoverflow] for help requests and how-to questions
 Please open GitHub issues for bugs and enhancements only, not general help requests.
 Please search previous issues (and Google and StackOverflow) before creating a new issue.
 
-Google Groups, IRC #activeadmin and Gitter are not actively monitored.
-
 ## Want to contribute?
 
 If you want to contribute through code or documentation, the [Contributing
@@ -95,6 +93,6 @@ Material Design       | Elegant pagination for any sort of collection
 [demo]: http://angular-firedash.netlify.com
 [docs]: http://activeadmin.info/0-installation.html
 [wiki]: https://github.com/max-geller/Angular-Firedash/wiki
-[stackoverflow]: http://stackoverflow.com/questions/tagged/activeadmin
+[stackoverflow]: http://stackoverflow.com/questions/tagged/angular-firedash
 [slack]: https://angularfiredash.slack.com
-[contributing]: https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md
+[contributing]: CONTRIBUTING.md
