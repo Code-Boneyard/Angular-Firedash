@@ -97,3 +97,5 @@ Material Design       | Elegant pagination for any sort of collection
 [stackoverflow]: http://stackoverflow.com/questions/tagged/angular-firedash
 [slack]: https://angularfiredash.slack.com
 [contributing]: CONTRIBUTING.md
+
+Made with :heart: in San Francisco
