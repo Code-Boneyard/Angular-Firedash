@@ -1,7 +1,7 @@
 # Angular 9 Material Firestarter 
 ## Client-Dashboard
 
-Client dashboard starter project using Angular 9, Firestore and Material
+Client dashboard starter project using **Angular 9, Firestore** and **Material**
 
 Live Demo: https://www.angular-firestarter.netlify.com
 
@@ -12,7 +12,7 @@ Live Demo: https://www.angular-firestarter.netlify.com
 
 
 ## Usage
-1. Cline from Git and install dependencies
+1. Clone from Git and install dependencies
         git clone https://github.com/max-geller/angular-9-material-firestarter-client-dashboard.git firestarter
         cd firestarter
         npm install
@@ -35,3 +35,8 @@ Live Demo: https://www.angular-firestarter.netlify.com
         };
 4. Serve project and navigate to localhost:4200
         ng serve -o
+
+
+*2020 Max Geller*
+
+
