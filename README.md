@@ -86,7 +86,7 @@ Material Design       | Elegant pagination for any sort of collection
 
 
 
-## To Do
+## To Do :calendar:
 - [ ] 'User Registration' Workflow
 - [ ] 'Reset Password' Workflow
 - [ ] 'Email Verification' Workflow
