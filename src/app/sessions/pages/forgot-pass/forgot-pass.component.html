@@ -1,0 +1,24 @@
+<div class="login-container" fxLayout="column" fxLayoutAlign="space-evenly center" fxLayoutGap="30px">
+    <img src="assets/sutro-logo.png" height="80px">
+    <div class="mat-card-title">Reset your password</div>
+
+<div fxLayout="column" fxLayoutAlign="space-evenly center" >
+    <form class="form-container" #loginForm="ngForm" fxLayout="column" fxLayoutAlign="space-evenly center">
+        <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input  matInput  id="inputEmail" [(ngModel)]="email" placeholder="Email" name="Email" #passwordResetEmail required>
+        </mat-form-field>
+
+
+        <button mat-raised-button  type="submit" (click)="auth.ForgotPassword(passwordResetEmail.value)">Reset</button>
+
+    </form>
+</div>
+    <mat-card-actions>
+        <div class="footer-container" fxLayout="row" fxLayoutAlign="space-evenly center" >
+            <h5 [routerLink]="['/sessions/login']" >Return to Login</h5>
+        </div>    
+    </mat-card-actions>
+
+
+</div>

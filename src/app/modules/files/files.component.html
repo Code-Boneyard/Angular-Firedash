@@ -1,0 +1,51 @@
+<div class="main-container"  fxLayout="row " >
+  <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+    <ng-container matColumnDef="select">
+      <mat-header-cell *matHeaderCellDef>
+        <mat-checkbox (change)="$event ? masterToggle() : null"
+                      [checked]="selection.hasValue() && isAllSelected()"
+                      [indeterminate]="selection.hasValue() && !isAllSelected()"
+                      [aria-label]="checkboxLabel()">
+        </mat-checkbox>
+      </mat-header-cell>>
+      <mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()"
+                      (change)="$event ? selection.toggle(row) : null"
+                      [checked]="selection.isSelected(row)"
+                      [aria-label]="checkboxLabel(row)">
+        </mat-checkbox>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
+
+    </ng-container>
+
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"><i class="fal fa-file-pdf"></i>&nbsp; &nbsp; {{element.name}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="modified">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Modified </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.modified}} </mat-cell>
+    </ng-container>
+
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="team" fxShow="true" fxHide.lt-sm="true">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Team </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.team}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+
+

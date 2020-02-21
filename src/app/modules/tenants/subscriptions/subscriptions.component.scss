@@ -1,0 +1,19 @@
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+  }
+  .mat-row:hover {
+    background-color: rgba(140, 145, 212, 0.199);
+    cursor: pointer;
+  }
+  :host {
+    display: block;
+    margin: 24px;
+  }
+  .header-title {
+    min-width: 50vh;
+  }

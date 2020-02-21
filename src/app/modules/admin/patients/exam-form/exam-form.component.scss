@@ -1,0 +1,17 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > * {
+  /*width: 100%;*/
+}
+
+.mat-radio-label {
+  padding-right: 25px;
+}
+
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}

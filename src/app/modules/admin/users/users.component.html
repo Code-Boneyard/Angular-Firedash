@@ -1,0 +1,66 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Active Users</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-actions>
+    <button mat-button>New User</button>
+  </mat-card-actions>
+
+  <mat-card-content>
+    <div class="user-table">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+      <mat-table  [dataSource]="tableDataSource" matSort class="animate">
+        <ng-container matColumnDef="firstName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> First </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.firstName }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="lastName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Last </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.lastName }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="email">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.email }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="emailVerified">
+
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Verified </mat-header-cell>
+          <mat-cell *matCellDef="let data">
+
+            <mat-slide-toggle class="tp-margin" color="primary" [(ngModel)]="data.emailVerified" [disabled]="true"></mat-slide-toggle>
+      </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef>
+            <button mat-icon-button color="primary" routerLink="/auth/modules/admin/users/new">
+              <i class="fal fa-plus"></i>
+            </button>
+          </mat-header-cell>
+
+          <mat-cell *matCellDef="let row; let i=index;">
+            <button mat-icon-button color="primary">
+              <i class="fal fa-pencil-alt"></i>
+            </button>
+
+          </mat-cell>
+        </ng-container>
+
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+      </mat-table>
+
+      <mat-paginator [length]="1" [pageSize]="1">
+      </mat-paginator>
+    </div>
+
+  </mat-card-content>
+
+</mat-card>
+
+
+

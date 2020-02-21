@@ -1,0 +1,13 @@
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+  }
+  
+  :host {
+    display: block;
+    margin: 24px;
+  }

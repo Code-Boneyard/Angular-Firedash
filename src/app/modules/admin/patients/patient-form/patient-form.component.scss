@@ -1,0 +1,13 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-radio-button {
+  padding-right: 25px;
+}
+
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}

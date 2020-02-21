@@ -1,0 +1,32 @@
+ 
+  .login-area {
+    background: white;
+    padding: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 400px;
+  
+  }
+  .login-container {
+    display: flex;
+    width: 30vh;
+    min-width: 360px;
+  }
+  
+  .footer-container {
+    justify-content: end;
+    max-height: 10%;
+  }
+  
+  .mat-card {
+    max-height: 500px;
+    padding: 30px;
+    width: 80%;
+  }
+  
+  .mat-form-field {
+    min-width: 80%;
+  }
+  

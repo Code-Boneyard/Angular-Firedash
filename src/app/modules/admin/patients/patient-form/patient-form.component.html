@@ -1,0 +1,26 @@
+<form #f="ngForm" (ngSubmit)="save(f.value)" class="form-container col-5">
+  <mat-form-field>
+    <input #name="ngModel" [(ngModel)]="patient.name" name="name" matInput placeholder="Name" required>
+    <mat-error *ngIf="name.touched && name.invalid">Name is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input #surname="ngModel" [(ngModel)]="patient.surname" name="surname" matInput placeholder="Surname" required>
+    <mat-error *ngIf="surname.touched && surname.invalid">Surname is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input [(ngModel)]="patient.dateOfBirth" name="dateOfBirth" matInput [matDatepicker]="picker" placeholder="Date of Birth">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-radio-group [(ngModel)]="patient.gender" name="gender" #radioGroup="matRadioGroup">
+    <mat-radio-button value="male" [checked]="'true'">male</mat-radio-button>
+    <mat-radio-button value="female">female</mat-radio-button>
+  </mat-radio-group>
+  <br />
+  <div class="button-row">
+    <button type="submit" mat-stroked-button color="primary">Save</button>
+    <button type="button" routerLink="/auth/modules/admin/patients" mat-stroked-button color="warn">Cancel</button>
+    <button type="button" (click)="delete()" mat-flat-button color="warn">Delete</button>
+  </div>
+
+</form>

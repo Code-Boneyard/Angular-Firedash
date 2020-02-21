@@ -1,0 +1,43 @@
+.layout-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-layout {
+  display: block;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 100vw;
+  min-width: 100vw;
+  position: relative;
+}
+
+.context-header {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display:inline-block;
+  min-width:10px;
+  padding:3px 7px;
+  font-size:10px;
+  font-weight:700;
+  line-height:1;
+  color:#fff;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:baseline;
+  background-color: rgb(187, 22, 22);
+  border-radius:10px;
+}

@@ -1,0 +1,22 @@
+<form #f="ngForm" (ngSubmit)="save(f.value)" class="form-container col-5">
+  <mat-form-field>
+    <input [(ngModel)]="physicalExam.date" name="date" matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input #temperatureCelcius="ngModel" [(ngModel)]="physicalExam.temperatureCelcius" name="temperatureCelcius" matInput placeholder="Temperature" required>
+    <mat-error *ngIf="temperatureCelcius.touched && temperatureCelcius.invalid">Temperature is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input #bloodPressureHg="ngModel" [(ngModel)]="physicalExam.bloodPressureHg" name="bloodPressureHg" matInput placeholder="Blood Pressure" required>
+    <mat-error *ngIf="bloodPressureHg.touched && bloodPressureHg.invalid">Blood Pressure is required</mat-error>
+  </mat-form-field>
+  <br />
+  <div class="button-row">
+    <button type="submit" mat-stroked-button color="primary">Save</button>
+    <button type="button" [routerLink]="['/auth/modules/admin/patients', patientId, 'exams']" mat-stroked-button color="warn">Back to Exams</button>
+    <button type="button" (click)="delete()" mat-flat-button color="warn">Delete</button>
+  </div>
+
+</form>

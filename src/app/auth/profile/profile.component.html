@@ -1,0 +1,70 @@
+  <div class="profile-container" *ngIf="auth.user$ | async as user">
+    <h3>Howdy, {{ user.displayName }}!</h3>
+
+    <mat-card>
+        <mat-card-content>
+            <div class="profile-details" fxLayout="row wrap" fxLayoutAlign="space-between start">
+            <mat-tab-group>
+                <mat-tab label="Personal Information">
+
+                        <mat-list >
+                            <div class="personal-info" fxLayout="row wrap" fxLayoutAlign="space-between start" fxFlex >
+                                <div class="name" fxLayout="column" fxLayoutAlign="start start">
+                                    <mat-list-item ><b>First:&nbsp;</b> {{ user.firstName }}</mat-list-item>
+                                    <mat-list-item><b>Last:&nbsp;</b> {{ user.lastName }}</mat-list-item>
+                                </div>
+                                <div class="organization" fxLayout="column" fxLayoutAlign="start start" >
+                                    <mat-list-item><b>Company:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                    <mat-list-item><b>Department:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                    <mat-list-item><b>Title:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                </div>
+                                <div class="contact" fxLayout="column" fxLayoutAlign="start start" >
+                                    <mat-list-item><b>Work Phone:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                    <mat-list-item><b>Mobile Phone:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                    <mat-list-item><b>Work Email:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                    <mat-list-item><b>Personal Email:&nbsp;</b> {{ user.title }}</mat-list-item>
+                                </div>
+                            </div>
+
+                        </mat-list>
+                        <div class="profile-photo" fxLayout="row" fxLayoutAlign="space-between start" fxFlex >
+                            Profile Photo
+                            <mat-divider>
+                            </mat-divider>
+                        </div>
+
+
+                </mat-tab>
+
+                <mat-tab label="Account Settings">
+                    <h2>Account Settings</h2>
+
+                    <mat-list>
+                        <mat-list-item>Email: {{ user.email }}</mat-list-item>
+                    </mat-list>
+
+                    Start Page:  Bid Board
+                    Time Zone:
+                    Play Initial Walkthough:
+                </mat-tab>
+
+                <mat-tab label="Privacy & Security">
+                    <h2>Security & Privacy</h2>
+                    Current Password:
+                    Password:
+                </mat-tab>
+
+                <mat-tab label="Notifications">
+                    <h2>Notifications</h2>
+
+
+                </mat-tab>
+
+                </mat-tab-group>
+            </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary">Edit</button>
+            </mat-card-actions>
+    </mat-card>
+</div>
