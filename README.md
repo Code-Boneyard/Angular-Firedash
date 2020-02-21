@@ -36,6 +36,7 @@ Live Demo: https://www.angular-firestarter.netlify.com
 4. Serve project and navigate to localhost:4200
         ng serve -o
 
+5. Feel free to contribute!
 
 *2020 Max Geller*
 
