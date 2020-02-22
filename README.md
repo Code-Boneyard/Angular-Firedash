@@ -1,7 +1,7 @@
 # :fire: Angular FireDash
 Featherweight administrative dashboard starter project using **Angular 9**, **Firestore** and **Material Design**.  
 
-Live Demo: :computer:  https://www.angular-firedash.netlify.com
+Live Demo: :computer:  https://angular-firedash.netlify.com
 
 ![](https://firebasestorage.googleapis.com/v0/b/angular-material-firestarter.appspot.com/o/demo.PNG?alt=media&token=2a379f4d-e73d-40dc-ac39-00d8792a49af)
 
