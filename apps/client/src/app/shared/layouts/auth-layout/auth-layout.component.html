@@ -1,0 +1,49 @@
+<div class="page-container" fxLayout="column" fxLayoutAlign="start stretch">
+
+  <!-- Top Navigation Bar -->
+  <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+
+      <div class="navbar-container" fxLayout="row" fxLayoutAlign="space-between center" >
+        <div class="brand-container" fxLayout="row" fxLayoutAlign="space-between center" >
+          <button mat-icon-button (click)="sidenav.toggle()" fxShow="true"><i class="fal fa-bars"></i></button>
+          <button mat-icon-button  fxShow="true" routerLink="dashboard" routerLinkActive="active" class="pointer"><i class="fal fa-home" ></i></button>
+
+
+            <span routerLink="dashboard" routerLinkActive="active" class="pointer">TEAM ACCESS</span>
+
+
+        </div>
+        <client-icon-menu></client-icon-menu>
+      </div>
+  </mat-toolbar>
+
+
+
+
+  <!-- Side Navigation Drawer -->
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" style="width: 25vh; min-width: 200px">
+      <client-side-nav></client-side-nav>
+    </mat-sidenav>
+
+    <!-- Page Content -->
+
+
+    <mat-sidenav-content>
+
+        <!-- Navigation Header -->
+        <client-header></client-header>
+        <mat-divider></mat-divider>
+
+          <!-- Main Container -->
+        <router-outlet></router-outlet>
+
+        <!-- Footer -->
+
+
+
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

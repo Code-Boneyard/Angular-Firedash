@@ -1,0 +1,296 @@
+
+<div class="main-container" fxLayout="row wrap" fxLayoutAlign="start start">
+    <div class="settings-container" fxLayout="column" fxLayoutAlign="start start">
+
+        <mat-accordion>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Appearance
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <div class="color-group">
+                  <mat-form-field>
+                    <mat-label>Color Profile</mat-label>
+                    <select matNativeControl>
+
+                      <option value="golden-gate">Golden Gate</option>
+                      <option value="wharf">Fisherman's Wharf</option>
+                      <option value="presidio">Presidio</option>
+                      <option value="ocean-beach">Ocean Beach</option>
+                      <option value="client-tower">Sutro Tower</option>
+                      <option value="civic-center">Civic Center</option>
+                      <option value="hayes">Hayes Valley</option>
+
+                  </select>
+
+                  </mat-form-field>
+
+                  </div>
+                  <mat-form-field>
+                    <mat-label>Primary Font</mat-label>
+                    <select matNativeControl>
+
+                      <option value="nunito">Nunito</option>
+                      <option value="roboto">Roboto</option>
+                      <option value="raleway">Raleway</option>
+                      <option value="cabin">Cabin</option>
+                      <option value="montserrat">Montserrat</option>
+                      <option value="open-sans">Open Sans</option>
+                      <option value="lato">Lato</option>
+                      <option value="ocean-beach">Oswald</option>
+                      <option value="ocean-beach">Poppins</option>
+                      <option value="ocean-beach">Quicksand</option>
+                      <option value="ocean-beach">Fira Sans</option>
+                      <option value="ocean-beach">Rubik</option>
+                      <option value="ocean-beach">Muli</option>
+                      <option value="ocean-beach">Ubuntu</option>
+
+                  </select>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <mat-label>Secondary Font</mat-label>
+                    <select matNativeControl>
+
+                      <option value="nunito">Nunito</option>
+                      <option value="roboto">Roboto</option>
+                      <option value="raleway">Raleway</option>
+                      <option value="cabin">Cabin</option>
+                      <option value="montserrat">Montserrat</option>
+                      <option value="open-sans">Open Sans</option>
+                      <option value="lato">Lato</option>
+                      <option value="ocean-beach">Oswald</option>
+                      <option value="ocean-beach">Poppins</option>
+                      <option value="ocean-beach">Quicksand</option>
+                      <option value="ocean-beach">Fira Sans</option>
+                      <option value="ocean-beach">Rubik</option>
+                      <option value="ocean-beach">Muli</option>
+                      <option value="ocean-beach">Ubuntu</option>
+                  </select>
+                  </mat-form-field>
+
+              <mat-card-actions>
+                <button mat-raised-button color='primary'>Custom Theme</button>
+              </mat-card-actions>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Notifications
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        User Management
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                Form-Based Registration
+                Allow users to register to the system.
+                If you disable this, users will only be added by admin using user management page.
+                New registered users are active by default.
+                If you disable this, new users will not be active (and can not login) until admin manually activates the account.
+                Use security image question (captcha) on registration.
+                Use security image question (captcha) on login.
+                Cookie consent
+                Cookie consent enabled
+                Session Timeout Control
+                Session Time Out Control Enabled
+                Show Lock Screen When Timed Out
+                Timeout Second.
+                5996
+                Countdown Modal Wait Time (Seconds)
+                60
+                Other Settings
+                Email confirmation required for login.
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      State Management
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+
+              <mat-form-field>
+                  <input matInput placeholder="Primary Color">
+              </mat-form-field>
+
+              <mat-form-field>
+                  <input matInput placeholder="Background Color">
+              </mat-form-field>
+
+          </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Landing Page
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-form-field>
+                    <input matInput placeholder="Primary Color">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Background Color">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Primary Font">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Secondary Font">
+                </mat-form-field>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Invoicing
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-form-field>
+                    <input matInput placeholder="Primary Color">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Background Color">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Primary Font">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Secondary Font">
+                </mat-form-field>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Security & Privacy
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+
+                <mat-form-field>
+                    <mat-label>Project</mat-label>
+                    <select matNativeControl>
+                        <optgroup label="Recent">
+                        <option value="volvo">SFO Terminal 3 West Modernization</option>
+                        </optgroup>
+                        <optgroup label="Active">
+                            <option value="volvo">SFO Terminal 3 West Modernization</option>
+                            <option value="saab">BART Controls Modernization</option>
+                            <option value="saab">Golden Gate Tennis Center</option>
+                        </optgroup>
+                        <optgroup label="Completed">
+                        <option value="mercedes">SFO Terminal 1C/BAB</option>
+                        <option value="audi">Gilead NB357 Pilot Lab</option>
+                        <option value="hyatt">SFO Grand Hyatt Hotel</option>
+                        <option value="tx">SFO Substation TX Bypass & Upgrade</option>
+                        </optgroup>
+                    </select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Primary Color">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Background Color">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Primary Font">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Secondary Font">
+                </mat-form-field>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Database Connections
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+
+                <mat-form-field>
+                    <input matInput placeholder="Primary Color">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Background Color">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Primary Font">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Secondary Font">
+                </mat-form-field>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Environment Variables
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h3>Version: 0.8.5</h3>
+                <h3>Active Tenants: 3</h3>
+                <h3>Active Users: 32</h3>
+                <h3>Server Status: Good</h3>
+                <h3>Latency: 19 ms</h3>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        API Keys & Integrations
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-form-field>
+                    <input matInput placeholder="Primary Color">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Background Color">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Primary Font">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Secondary Font">
+                </mat-form-field>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+
+
+    <div class="client-information-container"  fxLayout="column" fxLayoutAlign="start start">
+        <mat-card>
+            <mat-card-title>
+                App Information
+            </mat-card-title>
+
+            <h5>Version: 0.8.5</h5>
+            <h5>Active Tenants: 14</h5>
+            <h5>Active Users: 32</h5>
+            <h5>Server Status: Good</h5>
+            <h5>Latency: 19 ms</h5>
+        </mat-card>
+
+    </div>
+</div>

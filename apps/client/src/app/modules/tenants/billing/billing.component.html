@@ -1,0 +1,66 @@
+<div class="main-container" fxLayout="row wrap" fxLayoutGap="25px grid" >
+  <div class="widget-container" fxLayout="column" >
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Payment Methods</mat-card-title>
+        <mat-card-subtitle>subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color='primary' routerLink="/auth/modules/tenants/billing/add-payment-method">Add Payment Method</button>
+        <button mat-raised-button color='accent' routerLink="/auth/modules/tenants/billing/manage-payment-methods">Manage Payment Methods</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="widget-container" fxLayout="column" >
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Subscription</mat-card-title>
+        <mat-card-subtitle>subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <h4>User Licenses Available: 0</h4>
+        <h4>User Licenses Used: 4</h4>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color='primary' routerLink="/auth/modules/tenants/billing/upgrade">Upgrade</button>
+        <button mat-raised-button color='accent' routerLink="/auth/modules/subscriptions/">Manage Subscription</button>
+        <button mat-raised-button color='accent' routerLink="/auth/modules/subscriptions/pause">Pause Subscription</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="widget-container" fxLayout="column" >
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Invoices</mat-card-title>
+        <mat-card-subtitle>subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color='primary' routerLink="/auth/modules/tenants/billing/make-payment">Make Payment</button>
+
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="widget-container" fxLayout="column" >
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Recent Payments</mat-card-title>
+        <mat-card-subtitle>subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color='accent' routerLink="/auth/modules/tenants/billing/recent-payments">Payment History</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

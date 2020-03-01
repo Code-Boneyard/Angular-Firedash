@@ -1,0 +1,99 @@
+<div class="icon-menu" fxLayout="column">
+  <div >
+    <mat-menu #userMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="profile" routerLinkActive="active" class="pointer">
+        <i class="fal fa-user"></i>&nbsp; &nbsp; Profile</button>
+        <button mat-menu-item (click)="onNavigate()">
+          <i class="fal fa-question-circle"></i>&nbsp; &nbsp; Support</button>
+          <button mat-menu-item  (click)="signOut()" ><i class="fal fa-sign-out"></i>&nbsp; &nbsp; Logout</button>
+    </mat-menu>
+
+    <mat-menu #tasksMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="modules/tasks/list" routerLinkActive="active" class="pointer">
+        <i class="fal fa-clipboard-list-check"></i>&nbsp; &nbsp; Task List</button>
+      <button mat-menu-item class="pointer">
+        <i class="far fa-plus"></i>&nbsp; &nbsp; New Task</button>
+    </mat-menu>
+
+    <mat-menu #notificationsMenu="matMenu" xPosition="before">
+      <button mat-menu-item  routerLink="notifications" routerLinkActive="active" class="pointer">
+        No Notifications!</button>
+
+    </mat-menu>
+
+    <mat-menu #adminMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="modules/admin/users" routerLinkActive="active" class="pointer">
+        <i class="far fa-users"></i>&nbsp; &nbsp; Users</button>
+        <button mat-menu-item routerLink="modules/admin/roles" routerLinkActive="active" class="pointer">
+          <i class="far fa-user-shield"></i>&nbsp; &nbsp; Roles & Permissions</button>
+      <button mat-menu-item routerLink="modules/admin/subscriptions" routerLinkActive="active" class="pointer">
+          <i class="far fa-usd-square"></i>&nbsp; &nbsp; Subscriptions</button>
+      <button mat-menu-item routerLink="modules/admin/tenants" routerLinkActive="active" class="pointer">
+        <i class="far fa-users-class"></i>&nbsp; &nbsp; Tenants</button>
+        <button mat-menu-item routerLink="modules/admin/analytics" routerLinkActive="active" class="pointer">
+          <i class="far fa-analytics"></i>&nbsp; &nbsp; Analytics</button>
+      <button mat-menu-item routerLink="modules/admin/app" routerLinkActive="active" class="pointer">
+        <i class="far fa-tools"></i>&nbsp; &nbsp; App Settings</button>
+      <button mat-menu-item routerLink="modules/admin/devops/kanban" routerLinkActive="active" class="pointer">
+        <i class="far fa-code"></i>&nbsp; &nbsp; DevOps</button>
+      <button mat-menu-item routerLink="modules/admin/logs" routerLinkActive="active" class="pointer">
+        <i class="far fa-file-chart-line"></i>&nbsp; &nbsp; Logs</button>
+
+    </mat-menu>
+
+    <mat-menu #tenantMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="modules/tenants/teams" routerLinkActive="active" class="pointer">
+        <i class="far fa-users"></i>&nbsp; &nbsp; Teams</button>
+      <button mat-menu-item routerLink="modules/tenants/subscriptions" routerLinkActive="active" class="pointer">
+        <i class="far fa-user"></i>&nbsp; &nbsp; Subscriptions</button>
+      <button mat-menu-item routerLink="modules/tenants/billing" routerLinkActive="active" class="pointer">
+        <i class="far fa-credit-card"></i>&nbsp; &nbsp; Billing</button>
+      <button mat-menu-item routerLink="modules/tenants/apis" routerLinkActive="active" class="pointer">
+        <i class="far fa-code"></i>&nbsp; &nbsp; API Keys</button>
+      <button mat-menu-item routerLink="modules/tenants/settings" routerLinkActive="active" class="pointer">
+        <i class="far fa-cogs"></i>&nbsp; &nbsp; Settings</button>
+
+
+    </mat-menu>
+
+    <mat-menu #messagesMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="new-message" routerLinkActive="active" class="pointer">
+        <i class="far fa-plus"></i>&nbsp; &nbsp; New Message</button>
+      <button mat-menu-item routerLink="inbox" routerLinkActive="active" class="pointer">
+        <i class="fal fa-inbox"></i>&nbsp; &nbsp; Inbox</button>
+
+    </mat-menu>
+      <button mat-icon-button  [matMenuTriggerFor]="adminMenu" fxShow="true" fxHide.lt-sm="true">
+        <i class="fal fa-tools"></i>
+      </button>
+
+      <button mat-icon-button  [matMenuTriggerFor]="tenantMenu" >
+        <i class="fal fa-cog"></i>
+      </button>
+
+      <button mat-icon-button [matMenuTriggerFor]="notificationsMenu" >
+        <i class="fal fa-bell"></i><span class="badge">8</span>
+      </button>
+
+      <button mat-icon-button [routerLink]="['modules/files']" fxShow="true" fxHide.lt-sm="true">
+        <i  class="fal fa-folder-open" ></i>
+      </button>
+
+    <!-- TIME MANAGEMENT
+      <button mat-icon-button [routerLink]="['modules/success/time']" fxShow="true" fxHide.lt-sm="true">
+        <i  class="fal fa-clock"></i>
+      </button>
+    -->
+      <button mat-icon-button [matMenuTriggerFor]="messagesMenu" fxShow="true" fxHide.lt-sm="true">
+        <i class="fal fa-envelope"></i><span class="badge" >2</span>
+      </button>
+
+      <button mat-icon-button [matMenuTriggerFor]="tasksMenu">
+        <i class="fal fa-check"></i><span class="badge">11</span>
+      </button>
+
+      <button mat-icon-button [matMenuTriggerFor]="userMenu">
+        <i class="fal fa-user"></i>
+      </button>
+  </div>
+</div>

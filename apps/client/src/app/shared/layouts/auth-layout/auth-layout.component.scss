@@ -1,0 +1,40 @@
+.page-container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.mat-sidenav-container {
+  height: 90vh;
+}
+
+
+.mat-toolbar {
+  display: flex;
+  height: 48px
+}
+
+
+.navbar-container{
+  display: flex;
+  width: 100vw;
+}
+
+.brand-container {
+  display: flex;
+  min-width: fit-content;
+}
+
+.mat-form-field  {
+  display: flex;
+  font-size: 12px;
+  min-width: fit-content;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 3px;
+  color: rgb(39, 39, 39);
+}
+.pointer {
+  cursor: pointer;
+}

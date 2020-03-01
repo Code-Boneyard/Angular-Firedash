@@ -1,0 +1,36 @@
+<mat-card>
+  <div class="widget-header-actions" fxLayout="row" fxLayoutAlign="end center">
+    <client-widget-options></client-widget-options>
+  </div>
+  <mat-card-header>
+      <mat-card-title>ACTIVE TASKS</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-table #table [dataSource]="activeTasks" matSort class="animate">
+      <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+        <mat-cell *matCellDef="let data"> {{ data.description }} </mat-cell>
+      </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+  </mat-table>
+
+  <mat-paginator [length]="1" [pageSize]="1">
+    </mat-paginator>
+
+      <google-chart #chart
+      [title]="title"
+      [type]="type"
+      [data]="data"
+      [columnNames]="columnNames"
+      [options]="options"
+      [width]="380"
+      [height]="height">
+      </google-chart>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color='primary'>New Task</button>
+      <button mat-raised-button color='accent'>Manage Tasks</button>
+  </mat-card-actions>
+</mat-card>

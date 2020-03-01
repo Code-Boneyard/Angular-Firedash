@@ -1,0 +1,23 @@
+<mat-card>
+  <div class="widget-header-actions" fxLayout="row" fxLayoutAlign="end center">
+    <client-widget-options></client-widget-options>
+  </div>
+  <mat-card-header>
+      <mat-card-title>TIME MANGAEMENT</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <google-chart #chart
+      [title]="title"
+      [type]="type"
+      [data]="data"
+      [columnNames]="columnNames"
+      [options]="options"
+      [width]="420"
+      [height]="height">
+      </google-chart>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color='primary'>New Entry</button>
+    <button mat-raised-button color='accent'>Manage Time Entries</button>
+  </mat-card-actions>
+</mat-card>

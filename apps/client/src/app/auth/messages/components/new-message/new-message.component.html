@@ -1,0 +1,53 @@
+<div class="main-container" fxLayout="row wrap" fxLayoutGap="15px grid" fxLayoutAlign="start start" fxFlex>
+
+  <mat-card class="new-message">
+    <mat-card-header>
+      <mat-card-title>New Message</mat-card-title>
+      <mat-card-subtitle>Subject Line</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+      <div class="message-container">
+
+        <div class="message-delivery">
+          <div>
+            <mat-form-field>
+              <input matInput placeholder="To" >
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput placeholder="CC" >
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput placeholder="Subject" >
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="message-options">
+          <i class="fal fa-paperclip"></i><i class="fal fa-flag"></i>          <i class="fal fa-at"></i>          <i class="fal fa-address-book"></i>
+        </div>
+
+
+      <div class="message-window">
+        <mat-form-field appearance="fill">
+          <mat-label>Compose</mat-label>
+          <textarea class="text-container" matInput></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+
+
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color='primary'><i class="fal fa-paper-plane fa-sm" type="submit"  ></i> &nbsp; Send</button>
+      <button mat-raised-button color='accent'>Save Draft</button>
+      <button mat-raised-button color='accent' routerLink="/auth/inbox" routerLinkActive="active" class="pointer">Close</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

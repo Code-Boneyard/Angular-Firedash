@@ -1,0 +1,61 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>New Role</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div
+    class="form-container"
+    fxLayout="row wrap"
+    fxLayoutGap="15px grid"
+    fxLayoutAlign="start start"
+    fxFlex
+  >
+    <div class="input-item" fxLayout="column">
+      <mat-form-field>
+        <input matInput placeholder="Tenant Name" />
+      </mat-form-field>
+    </div>
+
+    <div class="input-item" fxLayout="column">
+      <mat-form-field>
+        <mat-label>Based On</mat-label>
+        <select matNativeControl>
+          <option value="nunito">Hollins Consulting</option>
+          <option value="roboto"
+            >San Francisco International Airport</option
+          >
+          <option value="cabin">SFO PMSS</option>
+          <option value="montserrat">Turner Construction</option>
+          <option value="open-sans">Gilead Sciences, Inc.</option>
+          <option value="lato">Facebook</option>
+        </select>
+      </mat-form-field><i class="fal fa-plus fa-xs"></i>
+    </div>
+
+    <div class="input-item" fxLayout="column">
+      <mat-form-field>
+        <mat-label>Subscription</mat-label>
+        <select matNativeControl>
+          <option value="nunito">Client User</option>
+          <option value="roboto">Client Admin</option>
+          <option value="cabin">Tenant User</option>
+          <option value="montserrat">Tenant Manager</option>
+          <option value="open-sans">Tenant Admin</option>
+          <option value="lato">Global Admin</option>
+        </select>
+      </mat-form-field>
+    <i class="fal fa-plus fa-xs"></i>
+    </div>
+
+
+
+    <div class="input-item" fxLayout="column">
+      <mat-checkbox>Send Tenant Welcome Email</mat-checkbox>
+    </div>
+  </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color='primary'>Submit</button>
+    <button mat-raised-button color='accent'>Close</button>
+  </mat-card-actions>
+</mat-card>

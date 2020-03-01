@@ -1,0 +1,12 @@
+<mat-menu #widgetMenu="matMenu" xPosition="before">
+  <button mat-menu-item  class="pointer">Remove</button>
+</mat-menu><button mat-icon-button>
+  <i class="fal fa-expand-arrows fa-xs" style="color:rgb(150, 150, 150);"></i>
+</button>
+<button mat-icon-button>
+  <i class="fal fa-external-link-alt fa-xs" style="color:rgb(150, 150, 150);"></i>
+</button>
+
+<button mat-icon-button [matMenuTriggerFor]="widgetMenu" >
+  <i class="fal fa-times fa-xs" style="color:rgb(150, 150, 150);;"></i>
+</button>

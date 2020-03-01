@@ -1,0 +1,35 @@
+<mat-card>
+  <div class="widget-header-actions" fxLayout="row" fxLayoutAlign="end center">
+    <client-widget-options></client-widget-options>
+  </div>
+  <mat-card-header>
+      <mat-card-title>TRENDING DOCUMENTS</mat-card-title>
+      <mat-card-subtitle>By Activity</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+
+
+
+
+      <mat-table #table [dataSource]="trendingDocuments" matSort class="animate">
+        <ng-container matColumnDef="docName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.docName }} </mat-cell>
+        </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+    </mat-table>
+
+    <mat-paginator [length]="1" [pageSize]="1">
+      </mat-paginator>
+
+
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color='primary' routerLink="/auth/modules/files/upload" routerLinkActive="active" class="pointer">Upload Document</button>
+    <button mat-raised-button color='accent' routerLink="/auth/modules/files/" routerLinkActive="active" class="pointer">Manage Documents</button>
+  </mat-card-actions>
+</mat-card>
+

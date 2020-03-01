@@ -1,0 +1,10 @@
+<div class="board-container" fxLayout="row wrap" fxLayoutGap="25px grid" fxFlex>
+  <div cdkDropList fxLayout="row wrap" cdkDropListOrientation="horizontal" class="boards" (cdkDropListDropped)="drop($event)">
+    <client-board class="board-item" fxLayout="column" cdkDrag *ngFor="let board of boards" [board]="board" >
+      <mat-icon cdkDragHandle class="handle">drag_indicator</mat-icon>
+    </client-board>
+  </div>
+  <div class="board-button">
+    <button mat-raised-button color="accent" cdkDragDisabled (click)="openBoardDialog()">New Board</button>
+  </div>
+</div>

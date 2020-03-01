@@ -1,0 +1,39 @@
+.page-container{
+  display: flex;
+}
+.slide-area {
+  display: flex;
+  max-width: 500px;
+  height: 100vh;
+  padding: 50px;
+  color: white;
+  min-width: 100%;
+  background: url(./../../../../assets/images/logos/login.jpg);
+  background-size: cover;
+}
+
+.form-container {
+width: 30vh;
+min-width: 360px;
+max-width: 360px;
+display: flex;
+}
+
+.login-container {
+  display: flex;
+}
+
+.footer-container {
+  justify-content: end;
+  max-height: 10%;
+}
+
+.mat-card {
+  max-height: 500px;
+  padding: 30px;
+  width: 80%;
+}
+
+.mat-form-field {
+  min-width: 80%;
+}

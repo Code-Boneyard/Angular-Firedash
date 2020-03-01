@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  margin: 24px;
+}
+
+.main-container {
+  display: flex;
+}
+.information-container {
+  width: 90vw;
+}
+.list-container {
+  display: flex;
+}
+.personal-info {
+  width: 60vw;
+}
+
+.mat-card {
+  min-width: 290px;
+}
+
+
+.mat-card-image {
+  width: 260px;
+}

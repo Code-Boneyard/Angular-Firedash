@@ -1,0 +1,131 @@
+  <div class="main-container" *ngIf="auth.user$ | async as user" fxLayout="row wrap" fxLayoutGap="25px grid" fxLayoutAlign="start start">
+
+    <div>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>List Container</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Upload</button>
+          <button mat-raised-button color="accent">Delete</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+
+
+    <div>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Profile Photo</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="profile-photo" fxLayout="column" fxLayoutAlign="space-between center" fxFlex>
+            <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/client-dev-31403.appspot.com/o/avatars%2Fmmg.jpg?alt=media&token=602b6340-887d-4e09-83c7-c0b281a442ab" alt="Photo of a Shiba Inu">
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Upload</button>
+          <button mat-raised-button color="accent">Delete</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+
+
+
+    <div class="personal-info">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Personal Information</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list >
+              <div class="personal" fxLayout="row wrap" fxLayoutAlign="space-between start" fxFlex >
+                  <div class="name" fxLayout="column" fxLayoutAlign="start start">
+                      <mat-list-item ><b>First:&nbsp;</b> {{ user.firstName }}</mat-list-item>
+                      <mat-list-item><b>Last:&nbsp;</b> {{ user.lastName }}</mat-list-item>
+                        <mat-list-item>UID: {{ user.uid }}</mat-list-item>
+                        <mat-list-item>License Key: {{ user.key }}</mat-list-item>
+                  </div>
+                  <div class="organization" fxLayout="column" fxLayoutAlign="start start" >
+                      <mat-list-item><b>Company:&nbsp;</b> {{ user.company }}</mat-list-item>
+                      <mat-list-item><b>Department:&nbsp;</b> {{ user.department }}</mat-list-item>
+                      <mat-list-item><b>Last Login:&nbsp;</b> {{ user.lastLogin }}</mat-list-item>
+                      <mat-list-item><b>Title:&nbsp;</b> {{ user.title }}</mat-list-item>
+                  </div>
+                  <div class="contact" fxLayout="column" fxLayoutAlign="start start" >
+                      <mat-list-item><b>Work Phone:&nbsp;</b> {{ user.workPhone }}</mat-list-item>
+                      <mat-list-item><b>Mobile Phone:&nbsp;</b> {{ user.mobilePhone }}</mat-list-item>
+                      <mat-list-item><b>Work Email:&nbsp;</b> {{ user.workEmail }}</mat-list-item>
+                      <mat-list-item><b>Personal Email:&nbsp;</b> {{ user.email }}</mat-list-item>
+                  </div>
+              </div>
+
+          </mat-list>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Edit</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Account Settings</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field>
+            <mat-label>Timezone</mat-label>
+            <select matNativeControl >
+              <option value="pst">Pacific Standard Time</option>
+
+            </select>
+          </mat-form-field> <br>
+          <mat-form-field>
+            <mat-label>Start Page</mat-label>
+            <select matNativeControl >
+              <option value="dashboard">Dashboard</option>
+            </select>
+          </mat-form-field><br>
+          <mat-form-field>
+            <mat-label>Currency</mat-label>
+            <select matNativeControl >
+              <option value="usd">USD ($)</option>
+            </select>
+          </mat-form-field><br>
+          <mat-form-field>
+            <mat-label>Units</mat-label>
+            <select matNativeControl >
+              <option value="imperial">Imperial</option>
+              <option value="metric">Metric</option>
+              </select>
+          </mat-form-field>
+
+
+
+        </mat-card-content>
+
+      </mat-card>
+    </div>
+
+  <div>
+        <mat-card>
+      <mat-card-header>
+        <mat-card-title>Privacy & Security</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Change Password</button>
+        <button mat-raised-button color="primary">Verify Email</button>
+        <button mat-raised-button color="primary">2-Factor Authentication</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

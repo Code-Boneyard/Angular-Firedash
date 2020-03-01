@@ -1,0 +1,58 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Manage Roles</mat-card-title>
+
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="user-table">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+      <mat-table  [dataSource]="tableDataSource" matSort class="animate">
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.name }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="seats">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Active Seats </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.seats }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="lastModified">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Last Modified </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{ data.lastModified }} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef>
+            <button mat-icon-button color="primary" (click)="newRole()">
+              <i class="fal fa-plus"></i>
+            </button>
+          </mat-header-cell>
+
+          <mat-cell *matCellDef="let row; let i=index;">
+            <button mat-icon-button color="primary" (click)="editRole()">
+              <i class="fal fa-pencil-alt"></i>
+            </button>
+
+          </mat-cell>
+        </ng-container>
+
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+      </mat-table>
+
+      <mat-paginator [length]="1" [pageSize]="1">
+      </mat-paginator>
+    </div>
+
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color='accent' routerLink="/auth/modules/admin/privileges">Manage Privileges</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
