@@ -1,15 +1,16 @@
 # :fire: Angular FireDash
-Featherweight administrative dashboard starter project using **Angular 9**, **Firestore** and **Material Design**.  
+Multi-Tenancy starter project using **Angular 9**, **Firestore** and **Material Design**.  
 
 Live Demo: :computer:  https://angular-firedash.netlify.com
 
 ![](https://firebasestorage.googleapis.com/v0/b/angular-material-firestarter.appspot.com/o/demo.PNG?alt=media&token=2a379f4d-e73d-40dc-ac39-00d8792a49af)
 
 ## Goals
-* Provide Modern Full Authentication Workflow
-* Maximize the use of Typescript
-* Modern User Experience
-* Feather-weight :zap:
+* Modern Multi-Tenancy with Firestore
+* Provide for Full Authentication Workflow
+* Maximize the Use of Typescript
+* Modern User Experience :zap:
+
 
 ## Getting started
 
@@ -23,7 +24,6 @@ Live Demo: :computer:  https://angular-firedash.netlify.com
 ## Need help?
 
 ### Slack Channel
-
 
 Please use [StackOverflow][stackoverflow] for help requests and how-to questions.
 
@@ -53,8 +53,13 @@ Fork, Clone to Local Machine,
 
 ## Features
 - [x] Angular 9
-- [x] Google Firebase / Firestore / Cloud Functions
-- [x] Material Design + Flex Layout
+- [x] Nrwl Monorepo Workspace
+- [x] Firebase Firestore
+- [x] Material Design
+- [x] Flex Layout
+- [x] NgRx State Management
+- [x] SaaS Landing Pages
+- [x] Flex Layout
 - [x] Google Charts
 
 - What does this project do?
