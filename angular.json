@@ -29,7 +29,7 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/admin/src/environments/environment.ts",
+                  "replace": "apps/admin/src/environments/environment.dev.ts",
                   "with": "apps/admin/src/environments/environment.prod.ts"
                 }
               ],
