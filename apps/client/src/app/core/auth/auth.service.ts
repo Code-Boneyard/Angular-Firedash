@@ -104,7 +104,7 @@ async microsoftSignIn(){
   /* Email Sign out */
   signOut() {
     this.afAuth.auth.signOut().then(() => {
-      this.document.location.href = 'https://www.sutroanalytics.com';
+      this.document.location.href = 'https://angular-firedash.netlify.com/sessions/login';
     });
   }
 

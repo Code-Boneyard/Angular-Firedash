@@ -18,6 +18,6 @@ export class IconMenuComponent {
   }
   onNavigate(){
     // this.router.navigateByUrl("https://www.google.com");
-    window.open("https://support.sutroanalytics.com", "_blank");
+    window.open("https://angular-firedash.netlify.com/sessions/login", "_blank");
 }
 }
