@@ -390,7 +390,7 @@
             "assets": [
               "apps/client/src/favicon.ico",
               "apps/client/src/assets",
-              "apps/client/src/assets/_redirects"
+              "apps/client/src/_redirects"
             ]
             ,
             "styles": [
