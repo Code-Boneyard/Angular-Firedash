@@ -1,5 +1,5 @@
 # :fire: Angular FireDash
-Multi-Tenancy starter project using **Angular 9**, **Firestore** and **Material Design**.  
+Multi-Tenancy SaaS starter project using **Angular 9**, **Firestore** and **Material Design**.  
 
 Live Demo: :computer:  https://angular-firedash.netlify.com
 
@@ -7,9 +7,13 @@ Live Demo: :computer:  https://angular-firedash.netlify.com
 
 ## Goals
 * Modern Multi-Tenancy with Firestore
-* Provide for Full Authentication Workflow
-* Maximize the Use of Typescript
+* Monorepo Workspace Management
+* Full Authentication Workflow
+* Typescript 
+* Netlify JAM-Stack Approach
+* Monorepo Workspace Management
 * Modern User Experience :zap:
+* SaaS Landing & Documentation SSG (HUGO)
 
 
 ## Getting started
