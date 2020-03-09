@@ -1,12 +1,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCFt6qthFZWo13Jta9xq9M8k4sM8sQMSmU",
-    authDomain: "angular-material-firestarter.firebaseapp.com",
-    databaseURL: "https://angular-material-firestarter.firebaseio.com",
-    projectId: "angular-material-firestarter",
-    storageBucket: "angular-material-firestarter.appspot.com",
-    messagingSenderId: "87826666797",
-    appId: "1:87826666797:web:2d6b57bcc99c7fe84f6fa4",
+    apiKey: "AIzaSyDq9rmGLXywPjwAPZ19-Z_H8wXLJVeuS8k",
+    authDomain: "firedash-dev.firebaseapp.com",
+    databaseURL: "https://firedash-dev.firebaseio.com",
+    projectId: "firedash-dev",
+    storageBucket: "firedash-dev.appspot.com",
+    messagingSenderId: "943934009503",
+    appId: "1:943934009503:web:8136efbc182824763b72aa",
+    measurementId: "G-1H58SXHN3R"
   }
 };
