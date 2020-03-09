@@ -1,5 +1,5 @@
 # :fire: Angular FireDash
-Multi-Tenancy SaaS starter project using **Angular 9**, **Firestore** and **Material Design**.  
+Multi-Tenancy SaaS starter project using **Angular 9**, **Firestore** and **Material Design**.  This project aims to help Angular developers kickstart modern multi-tenancy SaaS applications using the latest development techniques with Firebase and Cloud Firestore.
 
 Live Demo: :computer:  https://angular-firedash.netlify.com
 
@@ -13,7 +13,7 @@ Live Demo: :computer:  https://angular-firedash.netlify.com
 * Netlify JAM-Stack Approach
 * Monorepo Workspace Management
 * Modern User Experience :zap:
-* SaaS Landing & Documentation SSG (HUGO)
+
 
 
 ## Getting started
@@ -57,19 +57,18 @@ Fork, Clone to Local Machine,
 
 ## Features
 - [x] Angular 9
-- [x] Nrwl Monorepo Workspace
+- [x] Nrwl Monorepo Workspace Management
 - [x] Firebase Firestore
 - [x] Material Design
 - [x] Flex Layout
 - [x] NgRx State Management
-- [x] SaaS Landing Pages
+- [x] SaaS Landing & Support Pages (HUGO)
 - [x] Flex Layout
+- [x] In-App Badge Notifications
+- [x] SMS Push Notifications
 - [x] Google Charts
+- [x] Billing and Payments with Stripe
 
-- What does this project do?
-- Why is this project useful?
-- How do I get started?
-- Where can I get more help, if I need it?
 
 ## Usage
 1. Clone from Git and install dependencies
