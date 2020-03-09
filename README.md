@@ -24,6 +24,14 @@ Live Demo: :computer:  https://angular-firedash.netlify.com
 * Become a [Contributor][contributing]!
 * Join the [Slack Team][slack]!
 
+## Useful Commands
+
+- `nx serve client` - starts a dev server and opens browser with running app
+
+## Contributing
+Want to start contributing to open source with Angular?
+
+Leave your mark and join the growing team of contributors!
 
 ## Need help?
 
@@ -70,6 +78,9 @@ Fork, Clone to Local Machine,
 - [x] Billing and Payments with Stripe
 
 
+
+
+
 ## Usage
 1. Clone from Git and install dependencies
         git clone https://github.com/max-geller/angular-9-material-firestarter-firedash.git firestarter
@@ -94,6 +105,32 @@ Fork, Clone to Local Machine,
         };
 4. Serve project and navigate to localhost:4200
         ng serve -o
+
+
+#### Continuous Integration
+
+Starter project is using [Travis CI](https://travis-ci.org/) for running linters and tests on every commit.
+Based on your preferences and needs you can either:
+
+- not use / use other CI server and delete both `.travis.yml` and `.travis-deploy.sh`
+- create Travis CI account and link it to your projects Github repo and [configure build](https://medium.com/@tomastrajan/continuous-deployment-of-client-side-apps-with-github-pages-travis-ci-10e9d641a889)
+  with `GH_REF` and `GH_TOKEN` environment variables for automatic deployment of releases to Github Pages
+
+## Make It Your Own
+
+When using this starter project to build your own app you might consider some of the following steps:
+
+- use `search and replace` functionality of your favourite IDE to replace `anms` with `<your-app-prefix>`
+- rename project in `package.json` `name` property and set appropriate version (eg `0.0.0` or `1.0.0`)
+- remove / rename context path config `-- --deploy-url /angular-ngrx-material-starter/ --base-href /angular-ngrx-material-starter` in `package.json`, this is used to configure url (context path) on which the application will be available (eg. `https://www.something.com/<context-path>/`)
+- rename app in `/environments/` files (will be shown in browser tab)
+- delete pre-existing `CHANGELOG.md` (you will generate your own with future releases of your features)
+- delete `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md` and `BUILT_WITH.md` files as they are relevant only if project is open sourced on Github
+- edit the title and Open Graph metadata properties in `index.html`
+- remove or adjust links in the [footer](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/src/app/app.component.html#L79)
+- replace logo in `/assets` folder ( currently 128 x 128 pixel `png` file )
+- adjust colors in `/themes/default-theme.scss`
+- create a pull request in the [original repository](https://github.com/tomastrajan/angular-ngrx-material-starter/) to update `BUILT_WITH.md` [file](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/BUILT_WITH.md) with a link and short description of your project
 
 
 
