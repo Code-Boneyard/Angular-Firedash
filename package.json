@@ -46,7 +46,7 @@
     "@nestjs/common": "^6.8.3",
     "@nestjs/core": "^6.8.3",
     "@nestjs/mongoose": "^6.3.1",
-    "@nestjs/platform-express": "^6.8.3",
+    "@nestjs/platform-express": "^9.2.1",
     "@ng-bootstrap/ng-bootstrap": "^6.0.0",
     "@nrwl/angular": "9.0.2",
     "angular-calendar": "^0.28.2",
